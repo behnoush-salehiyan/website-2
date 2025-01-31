@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+header {
+  z-index: 100;
+  width: 100%;
+  position: sticky;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: rgba(162, 162, 162, 0.518);
+}
+nav {
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+nav > h1 {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+}
+ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  text-decoration: none;
+}
+li > a {
+  text-decoration: dotted;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.background {
+  height: 900px;
+  background-image: url(/places/5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.background > h2 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  margin: 30px;
+}
+.background > input[type="search"] {
+  width: 55rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.548);
+  border-radius: 50px;
+  border: unset;
+  padding: 10px;
+  font-size: 20px;
+}
+img {
+  width: 230px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.box > div > div {
+  width: 300px;
+  min-height: 450px;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  padding: 30px;
+}
+main > h2 {
+  margin: 100px 0 0 0px;
+  font-size: 4rem;
+  text-align: center;
+}
+.box {
+  margin: 50px 50px 150px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 20px;
+}
+h5 + p {
+  width: 230px;
+  text-align: justify;
+}
+p + input[type="button"] {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  width: 5rem;
+  height: 2rem;
+  position: absolute;
+  left: 35px;
+  bottom: 20px;
+}
+img + h5 {
+  font-size: 25px;
+  margin: 10px;
+}
+footer {
+  border-top: 1px solid black;
+}
+.col1 {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > div > input[type="search"] {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 20px;
+  text-align: center;
+}
+footer div p {
+  text-align: center;
+  font-family: "Libre Franklin", serif;
+  margin: 10px;
+  color: gray;
+}
+.box > div .scale {
+  transition: all linear 0.2s;
+}
+.box > div:hover .scale {
+  transform: scale(1.1);
+  background-color: rgb(195, 255, 195);
+}
+li:hover {
+  color: rgb(0, 129, 4);
+  text-decoration: underline;
+}
+@media (max-width: 576px) {
+  nav {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    display: none;
+  }
+  .background h2 {
+    font-size: 2rem;
+    margin: 10px;
+    text-align: center;
+  }
+  .background > input[type="search"] {
+    width: 20rem;
+  }
+  main > h2 {
+    margin: 30px auto;
+    font-size: 2rem;
+  }
+  .box {
+    margin: 20px auto;
+  }
+  .col1 input[type="search"] {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  nav {
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .background > input[type="search"] {
+    width: 30rem;
+  }
+  .background h2 {
+    font-size: 2rem;
+    margin: 10px;
+    text-align: center;
+  }
+  .box {
+    margin: 30px auto;
+  }
+}
+@media (min-width: 768px) {
+  nav {
+    margin: 0 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .background > input[type="search"] {
+    width: 40rem;
+  }
+  .background h2 {
+    font-size: 3rem;
+    margin: 10px;
+    text-align: center;
+  }
+  .box {
+    margin: 50px auto;
+  }
+}
+@media (min-width: 992px) {
+  nav {
+    margin: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .background > input[type="search"] {
+    width: 55rem;
+  }
+  .background h2 {
+    font-size: 4rem;
+    margin: 30px;
+    text-align: center;
+  }
+  .box {
+    margin: 50px 50px 150px;
+  }
+}
