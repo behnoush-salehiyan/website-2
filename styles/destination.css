@@ -91,7 +91,7 @@ main > h2 {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: start;
-  gap: 20px;
+  gap: 30px;
 }
 h5 + p {
   width: 230px;
@@ -143,85 +143,65 @@ li:hover {
   color: rgb(0, 129, 4);
   text-decoration: underline;
 }
-@media (max-width: 576px) {
-  nav {
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-  }
-  h1 {
-    display: none;
-  }
-  .background h2 {
-    font-size: 2rem;
-    margin: 10px;
-    text-align: center;
-  }
-  .background > input[type="search"] {
-    width: 20rem;
-  }
-  main > h2 {
-    margin: 30px auto;
-    font-size: 2rem;
-  }
+@media (max-width: 992px) {
   .box {
-    margin: 20px auto;
+    margin: 50px 20px 150px;
   }
-  .col1 input[type="search"] {
-    display: none;
-  }
-}
-@media (min-width: 576px) {
-  nav {
-    margin: 0;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .background > input[type="search"] {
-    width: 30rem;
-  }
-  .background h2 {
-    font-size: 2rem;
-    margin: 10px;
-    text-align: center;
-  }
-  .box {
-    margin: 30px auto;
-  }
-}
-@media (min-width: 768px) {
-  nav {
-    margin: 0 20px;
-    justify-content: space-around;
-    align-items: center;
+  .background > h2 {
+    font-size: 3rem;
+    margin: 30px;
   }
   .background > input[type="search"] {
     width: 40rem;
-  }
-  .background h2 {
-    font-size: 3rem;
-    margin: 10px;
-    text-align: center;
-  }
-  .box {
-    margin: 50px auto;
+    height: 3rem;
   }
 }
-@media (min-width: 992px) {
-  nav {
-    margin: 0 50px;
-    justify-content: space-between;
-    align-items: center;
+@media (max-width: 768px) {
+  .box {
+    margin: 50px auto 150px;
+  }
+  .background > h2 {
+    font-size: 2rem;
+    margin: 30px;
   }
   .background > input[type="search"] {
-    width: 55rem;
+    width: 35rem;
+    height: 3rem;
   }
-  .background h2 {
-    font-size: 4rem;
-    margin: 30px;
-    text-align: center;
+  nav > h1 {
+    display: none;
   }
+  main > h2 {
+    font-size: 3rem;
+    margin-top: 50px;
+  }
+  nav {
+    margin: auto;
+    justify-content: center;
+    padding: auto;
+  }
+}
+@media (max-width: 576px) {
   .box {
-    margin: 50px 50px 150px;
+    margin: 50px auto 150px;
+  }
+  .background > h2 {
+    font-size: 25px;
+    margin: 30px;
+  }
+  .background > input[type="search"] {
+    width: 20rem;
+    height: 3rem;
+  }
+  /* nav > h1 {
+    display: none;
+  } */
+
+  footer > div > input[type="search"] {
+    display: none;
+  }
+  main > h2 {
+    font-size: 2rem;
+    margin-top: 50px;
   }
 }
