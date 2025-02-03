@@ -87,7 +87,7 @@ nav > h1 {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: start;
-  gap: 10px;
+  gap: 30px;
 }
 .para p {
   margin: 50px 300px 20px;
@@ -143,57 +143,47 @@ li:hover {
   text-decoration: underline;
 }
 @media (max-width: 1200px) {
+  .box {
+    margin: 50px 100px 0px;
+  }
   .para p {
-    margin: 10px 40px;
-    text-align: center;
+    margin: 50px 150px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .box {
+    margin: 50px 80px 0px;
+  }
+  .para p {
+    margin: 50px 100px 20px;
+  }
+  .background > div {
+    margin: auto;
   }
 }
 
-@media (max-width: 850px) {
-  h1 {
-    display: none;
-    margin: 0;
-  }
-  nav {
-    margin: 0;
-    padding: 10px;
-    justify-content: center;
+@media (max-width: 568px) {
+  .para p {
+    margin: 50px 70px 20px;
   }
   .background > div h2 {
     font-size: 25px;
   }
-
+  .background > div h2 span {
+    font-size: 4rem;
+  }
   .background > div {
-    align-items: center;
-    justify-content: center;
     margin: auto;
   }
-  .para p {
-    margin: 10px 20px;
-    text-align: center;
-    font-family: "Libre Franklin", serif;
-  }
-}
-@media (max-width: 550px) {
-  h1 {
+  nav > h1 {
     display: none;
-    margin: 0;
+  }
+  footer > div > input[type="search"] {
+    display: none;
   }
   nav {
     margin: auto;
-    padding: 5px;
+    padding: auto;
     justify-content: center;
-  }
-  .background > div h2 {
-    font-size: 20px;
-  }
-  .background > div h2 span {
-    font-size: 3rem;
-  }
-  .box {
-    margin: 30px 10px;
-  }
-  .col1 > input {
-    display: none;
   }
 }
